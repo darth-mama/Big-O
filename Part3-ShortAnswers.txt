@@ -1,0 +1,57 @@
+1.True or false: n^2 + n is O(n^2).
+True
+𝑛2 dominates 𝑛 as 𝑛 grows larger.
+Therefore, 𝑛2+n is asymptotically equivalent to 𝑂(𝑛2)O.
+2.True or false: n^2 * n is O(n^3).
+True
+𝑛2x𝑛=𝑛3
+Therefore, 𝑛2×𝑛 is 𝑂(𝑛3)
+3.True or false: n^2 + n is O(n).
+False
+𝑛2 grows much faster than 𝑛 as 𝑛 increases.
+Therefore, n2+𝑛 is not 𝑂(𝑛); it is 𝑂(𝑛2)
+
+4.What’s the time complexity of the .indexOf array method?
+The .indexOf method scans through the array to find the index of the specified element.
+In the worst case, it may need to check every element, making it 𝑂(𝑛)
+
+5.What’s the time complexity of the .includes array method?
+The .includes method also scans through the array to determine if an element exists.
+In the worst case, it may need to check every element, making it 𝑂(𝑛)
+
+6.What’s the time complexity of the .forEach array method?
+The .forEach method executes a provided function once for each array element.
+Therefore, it iterates through the entire array, making it 𝑂(𝑛)
+
+7.What’s the time complexity of the .sort array method?
+The .sort method typically implements a variation of quicksort, mergesort, or timsort, all of which have an average time complexity of 𝑂(n log 𝑛)
+
+8.What’s the time complexity of the .unshift array method?
+The .unshift method adds one or more elements to the beginning of the array.
+This requires shifting all existing elements, making it 𝑂(𝑛)
+
+9.What’s the time complexity of the .push array method?
+The .push method adds one or more elements to the end of the array.
+This operation is generally 𝑂(1) as it typically involves adding an element to the end without shifting other elements
+
+10.What’s the time complexity of the .splice array method?
+The .splice method can add or remove elements from the array at any position.
+In the worst case, it may require shifting elements, making it 𝑂(𝑛)
+
+11.What’s the time complexity of the .pop array method?
+The .pop method removes the last element from the array.
+This operation is 𝑂(1) as it typically involves removing an element from the end without shifting other elements.
+
+12.What’s the time complexity of the Object.keys() function?
+The Object.keys() function returns an array of the object’s own enumerable property names.
+It must iterate over all enumerable properties of the object, making it 𝑂(𝑛) where 𝑛 is the number of properties in the object.
+
+13. What’s the space complexity of the Object.keys() function?
+
+The Object.keys() function creates a new array that contains the keys of the object.
+The number of keys in the object is 𝑛
+Therefore, the space required to store these keys is proportional to the number of keys in the object.
+Thus, the space complexity is 𝑂(𝑛)
+Recap:
+Time Complexity: 𝑂(𝑛) – Iterates over all enumerable properties.
+Space Complexity: 𝑂(𝑛) – Creates an array of keys proportional to the number of keys in the object.

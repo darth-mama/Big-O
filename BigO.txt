@@ -1,0 +1,41 @@
+Simplifed O
+
+1. O(n + 10)
+   - The constant term 10 is negligible compared to \( n \) as \( n \) grows larger.
+   - Simplified: \( O(n) \)
+
+2. O(100 * n)
+   - The constant multiplier 100 does not affect the growth rate.
+   - Simplified:\( O(n) \)
+
+3. O(25)
+   - This is a constant, so it doesn't change with the input size.
+   - Simplified: \( O(1) \)
+
+4. O(n^2 + n^3)
+   - As \( n \) grows larger, \( n^3 \) dominates \( n^2 \).
+   - Simplified: \( O(n^3) \)
+
+5. O(n + n + n + n)
+   - Simplifies to \( 4n \), and the constant multiplier 4 is negligible.
+   - Simplified: \( O(n) \)
+
+6. O(1000 * log(n) + n)
+   - As \( n \) grows larger, \( n \) dominates \( 1000 \log(n) \).
+   - Simplified: \( O(n) \)
+
+7. O(1000 * n * log(n) + n)
+   - As \( n \) grows larger, \( 1000n \log(n) \) dominates \( n \).
+   - Simplified:\( O(n \log(n)) \)
+
+8. O(2^n + n^2)
+   - As \( n \) grows larger, \( 2^n \) dominates \( n^2 \).
+   - Simplified: \( O(2^n) \)
+
+9. O(5 + 3 + 1)
+   - This is a constant, so it doesn't change with the input size.
+   - Simplified: \( O(1) \)
+
+10. O(n + n^(1/2) + n^2 + n * log(n)^10)
+    - As \( n \) grows larger, \( n^2 \) dominates the other terms.
+    - Simplified: \( O(n^2) \)
